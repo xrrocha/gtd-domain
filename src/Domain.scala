@@ -21,11 +21,15 @@ case class Project(
     note: Note,
 )
 
+enum ItemStatus:
+    case Pending, Done
+
 case class Item(
     name: String,
     tags: Set[Tag],
     list: GTDList,
     note: Note,
+    status: ItemStatus,
     duration: Duration,
     energy: Energy,
     dueDate: LocalDate,
