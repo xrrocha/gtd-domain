@@ -8,4 +8,4 @@ An item can have a _duration_, a level of _energy_ to be invested in it (`Low`, 
 
 An item may also belong to a _project_.
 
-A _project_ is a long-running activity encompassing multiple _items_ in the pursuit of a well-defined outcome. Like _items_, a _project_ is identified by a _name, classified by one or more _tags_ and detailed by a _note_.
+A project is a long-running activity encompassing multiple items in the pursuit of a well-defined outcome. Like items, a project is identified by a name, classified by one or more tags and detailed by a note.
