@@ -1,33 +1,30 @@
 import java.time.LocalDate
 import java.time.Duration
 
-enum TagType:
-    case Label, Area, Contact
+type Tag = String
 
-case class Tag(name: String, tagType: TagType)
-
-enum GTDList:
-    case Inbox, Next, Someday, Waiting, Scheduled
+enum ListType:
+  case Inbox, Next, Someday, Waiting, Scheduled
 
 enum Energy:
-    case Low, Medium, High
+  case Low, Medium, High
 
 opaque type Note = String
 
 case class Project(
     name: String,
     tags: Set[Tag],
-    list: GTDList,
-    note: Note,
+    list: ListType,
+    note: Note
 )
 
 enum ItemStatus:
-    case Pending, Done
+  case Pending, Done
 
 case class Item(
     name: String,
     tags: Set[Tag],
-    list: GTDList,
+    listType: ListType,
     note: Note,
     status: ItemStatus,
     duration: Duration,
